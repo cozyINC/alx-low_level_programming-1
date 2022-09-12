@@ -19,9 +19,9 @@ int main(void)
 			k = 0;
 			while (k <= 9)
 			{
-				if (i != j && 
+				if (i != j &&
 					i < j &&
-					j != k && 
+					j != k &&
 					j < k)
 				{
 					putchar(i + 48);
@@ -40,6 +40,5 @@ int main(void)
 	++i;
 }
 		putchar('\n');
-	
 		return (0);
 }
