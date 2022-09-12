@@ -8,33 +8,33 @@
 
 int main(void)
 {
-	int i, j, k;
+	int i = 0, j, k;
 
-	i = 48;
-	j = 48;
-	k = 48;
-	while (i < 58)
+	while (i <= 9)
 	{
-		j = i + 1;
-		while (j < 58)
+		j = 0;
+		while (j <= 9)
 		{
-			k = j + 1;
-			while (k < 58)
+			k = 0;
+			while (k <= 9)
 			{
-				putchar(i);
-				putchar(j);
-				putchar(k);
-				if (i < 55 || j < 56 || k < 57)
+				if (i != j && i < j && j != k && j < k)
 				{
-					putchar(44);
-					putchar(32);
-					k++;
-				}
-				j++;
+					putchar(i + 48);
+					putchar(j + 48);
+					putchar(k + 48);
+					if (i + j + k != 24)
+					{
+						putchar(',');
+						putchar(' ');
 			}
-			i++;
+			k++;
 		}
-		putchar(10);
+		j++;
+	}
+	i++;
+}
+		putchar('\n');
 	}
 		return (0);
 }

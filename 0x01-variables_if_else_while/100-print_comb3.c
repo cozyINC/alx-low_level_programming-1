@@ -4,7 +4,7 @@
  * main - Entry point
  *
  * Return: Always 0 (success)
- * */
+ */
 
 int main(void)
 {
@@ -20,7 +20,6 @@ int main(void)
 			{
 				putchar(numb + 48);
 				putchar(numb1 + 48);
-				
 					if (numb + numb1 != 17)
 					{
 						putchar(',');
