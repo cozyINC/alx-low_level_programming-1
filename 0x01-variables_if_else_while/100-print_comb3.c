@@ -1,35 +1,35 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 /**
  * main - Entry point
  *
  * Return: Always 0 (success)
- */
+ * */
 
 int main(void)
 {
-	int numb;
+	int numb = 0;
 	int numb1;
 
-	for (numb = '0'; numb <= '9'; numb++)
+	while (numb <= 9)
 	{
-		putchar(numb);
-		for (numb1 = '0'; numb1 <= '9'; numb1++)
+		numb1 = 0;
+		while (numb1 <= 9)
 		{
-			if (numb != numb1)
+			if (numb != numb1 && numb < numb1)
 			{
-				putchar(numb1);
-				{
-					if (numb1 != '9')
+				putchar(numb + 48);
+				putchar(numb1 + 48);
+				
+					if (numb + numb1 != 17)
 					{
 						putchar(',');
 						putchar(' ');
 					}
 				}
-			}
+			++numb1;
 		}
+		++numb;
 	}
 	putchar('\n');
 
