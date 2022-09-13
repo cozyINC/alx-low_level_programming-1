@@ -1,21 +1,17 @@
-#include "unistd.h"
-#include "main.h"
-
+#include"main.h"
 /**
- * main - start point
+ * main - Entry point
  *
- * Return: 0 if code executes
+ * Description: prints _putchar using putchar prototype
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	char *sh = "_putchar";
+	char str[] = "_putchar";
+	int ch;
 
-	while (*sh)
-	{
-		_putchar(*sh);
-		sh++;
-	}
+	for (ch = 0; ch < 8; ++ch)
+		_putchar(str[ch]);
 	_putchar('\n');
 
 	return (0);
