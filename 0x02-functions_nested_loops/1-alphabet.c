@@ -1,13 +1,17 @@
+#include <unistd.h>
 #include "main.h"
+#include "_putchar.c"
 
 /**
- * main - chech the code
+ * main - check the code
  *
  * Return: ALways 0.
  */
-int main (void)
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
-}
+	char n;
 
+	for (n = 'a'; n <= 'z'; n++)
+		_putchar(n);
+	_putchar('\n');
+}
