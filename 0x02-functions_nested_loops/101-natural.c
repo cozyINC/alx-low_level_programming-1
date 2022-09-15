@@ -9,13 +9,18 @@
  */
 int main(void)
 {
-	int sum, num;
+	sum_multiple_3_5(1024);
+	return (0);
+}
 
-	for (num = 0; num < 1024; ++num)
+void sum_multiple_3_5(int n)
+{
+	int sum = 0;
+
+	for (n = n - 1; n >= 0; n--)
 	{
-		if ((num % 3 == 0) || (num % 5 == 0))
-			sum += num
+		if (((n % 3) == 0) || ((n % 5) == 0))
+			sum = sum + n;
 	}
 	printf("%d\n", sum);
-	return (0);
 }
