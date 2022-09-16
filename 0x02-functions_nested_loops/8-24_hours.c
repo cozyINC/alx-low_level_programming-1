@@ -2,7 +2,10 @@
 
 /*
  * jack_bauer- prints every minute of the day
+ * Deescription: jack_bauer
+ * Return: void
  */
+
 void jack_bauer(void)
 {
 	int min, hr;
